@@ -1,0 +1,7 @@
+apiVersion: sigs.k8s.io.my.domain/v1alpha1
+kind: BucketContent
+metadata:
+  name: bucketcontent-sample
+spec:
+  # Add fields here
+  foo: bar

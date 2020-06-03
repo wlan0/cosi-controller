@@ -1,0 +1,13 @@
+domain: my.domain
+repo: github.com/wlan0/cosi
+resources:
+- group: sigs.k8s.io
+  kind: Bucket
+  version: v1alpha1
+- group: sigs.k8s.io
+  kind: BucketContent
+  version: v1alpha1
+- group: sigs.k8s.io
+  kind: BucketClass
+  version: v1alpha1
+version: "2"

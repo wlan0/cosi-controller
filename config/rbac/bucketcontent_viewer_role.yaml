@@ -1,0 +1,20 @@
+# permissions for end users to view bucketcontents.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: bucketcontent-viewer-role
+rules:
+- apiGroups:
+  - sigs.k8s.io.my.domain
+  resources:
+  - bucketcontents
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - sigs.k8s.io.my.domain
+  resources:
+  - bucketcontents/status
+  verbs:
+  - get

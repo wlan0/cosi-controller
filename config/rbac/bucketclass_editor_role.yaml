@@ -1,0 +1,24 @@
+# permissions for end users to edit bucketclasses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: bucketclass-editor-role
+rules:
+- apiGroups:
+  - sigs.k8s.io.my.domain
+  resources:
+  - bucketclasses
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - sigs.k8s.io.my.domain
+  resources:
+  - bucketclasses/status
+  verbs:
+  - get
