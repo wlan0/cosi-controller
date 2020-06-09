@@ -1,0 +1,7 @@
+apiVersion: sigs.k8s.io.my.domain/v1alpha1
+kind: BucketAccess
+metadata:
+  name: bucketaccess-sample
+spec:
+  # Add fields here
+  foo: bar

@@ -10,4 +10,13 @@ resources:
 - group: sigs.k8s.io
   kind: BucketClass
   version: v1alpha1
+- group: sigs.k8s.io
+  kind: BucketAccess
+  version: v1alpha1
+- group: sigs.k8s.io
+  kind: BucketAccessRequest
+  version: v1alpha1
+- group: sigs.k8s.io
+  kind: BucketAccessClass
+  version: v1alpha1
 version: "2"
