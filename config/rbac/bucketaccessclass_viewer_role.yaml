@@ -1,0 +1,20 @@
+# permissions for end users to view bucketaccessclasses.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: bucketaccessclass-viewer-role
+rules:
+- apiGroups:
+  - sigs.k8s.io.my.domain
+  resources:
+  - bucketaccessclasses
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - sigs.k8s.io.my.domain
+  resources:
+  - bucketaccessclasses/status
+  verbs:
+  - get

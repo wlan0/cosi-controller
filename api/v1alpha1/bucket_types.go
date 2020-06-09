@@ -30,9 +30,6 @@ const (
 
 // BucketSpec defines the desired state of Bucket
 type BucketSpec struct {
-	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-
 	// Protocol is the underlying protocol used by the Object Storage bucket. eg. s3v4, gcs etc.
 	Protocol Protocol `json:"protocol"`
 
@@ -61,9 +58,6 @@ const (
 
 // BucketStatus defines the observed state of Bucket
 type BucketStatus struct {
-	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
-	// Important: Run "make" to regenerate code after modifying this file
-
 	// BucketContentName is the name of the BucketContent resource created/bound by the COSI controller
 	// corresponding to the requested Bucket resource
 	// +optional
